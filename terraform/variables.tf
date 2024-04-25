@@ -1,7 +1,7 @@
 variable "region" {
   description = "AWS region"
   type = string
-  default = "us-east-1"
+  default = "ap-south-1a"
 }
 
 variable "vpc-name" {
@@ -44,19 +44,19 @@ variable "iam-role" {
 variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   type        = string
-  default     = "ami-0c7217cdde317cfec" // Replace with the latest AMI ID for your region
+  default     = "ami-007020fd9c84e18c7" // Replace with the latest AMI ID for your region
 }
 
 variable "instance_type" {
   description = "EC2 instance type"
   type        = string
-  default     = "t2.large"
+  default     = "t2.medium"
 }
 
 variable "key_name" {
   description = "EC2 keypair"
   type        = string
-  default     = "gitopskey"
+  default     = "login"
 }
 
 variable "instance_name" {
